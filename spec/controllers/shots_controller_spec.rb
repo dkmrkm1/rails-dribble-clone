@@ -1,6 +1,6 @@
 require "rails_helper"
 
-Rspec.describe "ShotsController", type: :controller do
+describe "ShotsController", type: :controller do
   describe "GET #index" do
     it "hoge" do
       shot = create(:shot)
