@@ -1,0 +1,4 @@
+test:
+  adapter: mysql2
+  username: root
+  database: app_test
