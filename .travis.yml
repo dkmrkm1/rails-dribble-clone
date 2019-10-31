@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.6.3
+env:
+  - DB=mysql
 cache: bundler
 before_script:
   - cp config/database.travis.yml config/database.yml
