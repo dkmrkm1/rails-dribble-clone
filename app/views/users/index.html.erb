@@ -1,0 +1,19 @@
+<h1>Users#index</h1>
+
+<div class="users">
+  <table>
+    <thead>
+      <tr>
+        <th>email</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.email %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
