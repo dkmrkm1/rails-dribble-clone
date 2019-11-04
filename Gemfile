@@ -10,6 +10,7 @@ gem 'active_model_serializers'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bullet'
 gem 'coffee-rails', '~> 4.2'
+gem 'coveralls', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.5'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
