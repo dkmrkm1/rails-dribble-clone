@@ -24,6 +24,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development do
   gem "annotate"
+  gem "better_errors"
   gem "byebug", group: :test, platforms: %i[mri mingw x64_mingw]
   gem "faker", group: :test
   gem "listen", ">= 3.0.5", "< 3.2"
