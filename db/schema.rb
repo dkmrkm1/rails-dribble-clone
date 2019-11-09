@@ -10,11 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_191_104_155_716) do
-  create_table "shots", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "title"
+ActiveRecord::Schema.define(version: 2019_11_04_155716) do
+
+  create_table "shots", id: :bigint, unsigned: true, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", null: false
     t.text "description"
     t.integer "user_id"
+    t.string "user_shot"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,7 +29,7 @@ ActiveRecord::Schema.define(version: 20_191_104_155_716) do
     t.index ["user_id"], name: "index_user_properties_on_user_id", unique: true
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "users", id: :bigint, unsigned: true, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -38,4 +40,5 @@ ActiveRecord::Schema.define(version: 20_191_104_155_716) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
 end
