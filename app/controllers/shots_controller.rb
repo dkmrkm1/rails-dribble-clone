@@ -3,7 +3,7 @@ class ShotsController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update, :destroy, :like, :unlike]
 
   def index
-    @shots = Shot.all.order(created_at: :desc)
+    @shots = Shot.all.includes(:user).order(created_at: :desc)
   end
 
   def show

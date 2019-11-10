@@ -1,7 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h1>Shots</h1>
+  <div class="section" style="background: #d3d3d33d;">
+    <div class="row columns is-multiline">
 
+      <% @shots.each do |shot| %>
+        <div class="column is-4">
+          <div class="card large">
+            <div class="card-image" style="padding: 5px;">
+              <figure class="image">
+                <img src="https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=" alt="Image">
+              </figure>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+<!--
 <table>
   <thead>
     <tr>
@@ -26,6 +45,8 @@
   </tbody>
 </table>
 
-<br>
+-->
 
+<!--
 <%= link_to 'New Shot', new_shot_path %>
+-->
