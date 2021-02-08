@@ -10,7 +10,7 @@ gem "active_model_serializers"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bullet"
 gem "bulma-rails", "~> 0.7.5"
-gem "carrierwave", "~> 2.0"
+gem "carrierwave", "~> 2.1"
 gem "coffee-rails", "~> 4.2"
 gem "coveralls", require: false
 gem "devise"
